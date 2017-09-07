@@ -1,0 +1,669 @@
+
+
+<html>
+  <head>
+    <title>JQUERY</title>
+    <!--------------------------------------Google Fonts----------------------------------------------------------->
+      <link href="https://fonts.googleapis.com/css?family=Lato|Droid+Sans+Mono|Encode+Sans:500|Roboto+Condensed:300,400" rel="stylesheet">
+    <!--------------------------------------Bootstrap CSS---------------------------------------------------------->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <!----------------------------Bootstrap Plugins:JS, Popper, and jQuery----------------------------------------->
+      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+    <!--------------------------------------FONT AWESOME----------------------------------------------------------->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!---------------------------------------Local CSS------------------------------------------------------------->
+      <link rel="stylesheet" type="text/css" href="THEME.css">
+
+  </head>
+
+
+  <!-------------------------------------NAV BAR -------------------------------------------------->
+<div class="container">
+  <nav class="navbar fixed-top navbar-expand-lg navbar-color">
+<!----------- Navbar FreeCodeCamp -------->
+    <a class="navbar-brand navbar-brand-color " href="file:///C:\Users\akim4\Google Drive\CODE\FCCNotes\FCCNotes\FCCNotes.html">FreeCodeCamp's <i class="fa fa-free-code-camp" aria-hidden="true"></i> Notes</a>
+<!-------------- Navbar About ------------>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link navbar-color" href="file:///C:\Users\akim4\Google Drive\CODE\FCCNotes\FCCNotes\ABOUT.html"><i class="fa fa-info-circle" aria-hidden="true"></i> About<span class="sr-only">(current)</span></a>
+        </li>
+<!-------- Forum Button ----------->
+        <li class="nav-item">
+          <a class="nav-link navbar-color" href="https://forum.freecodecamp.org/latest"><i class="fa fa-list" aria-hidden="true"></i> Forum</a>
+        </li>
+<!-------- Gitter Button ----------->
+        <li class="nav-item">
+          <a class="nav-link navbar-color" href="https://gitter.im/FreeCodeCamp/FreeCodeCamp"><i class="fa fa-comments" aria-hidden="true"></i> Gitter</a>
+        </li>
+
+
+<!-------- Navbar Contact Button ----------->
+        <li class="nav-item">
+          <a class="nav-link navbar-color" href="file:///C:\Users\akim4\Google Drive\CODE\FCCNotes\FCCNotes\CONTACT.html"><i class="fa fa-envelope" aria-hidden="true"></i> Contact</a>
+        </li>
+<!--------Navbar By: Adam Kim / GITHUB ---->
+      <li class="nav-item">
+        <a class="nav-link navbar-color" href="https://github.com/resv"><i class="fa fa-github" aria-hidden="true"></i> By: Adam Kim</a>
+       </li>
+
+
+      </ul>
+<!--------- Navbar Drop Down Bar ----------->
+      <div class="dropdown show">
+      <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-bars" aria-hidden="true"></i></a>
+
+    <div class="dropdown-menu dropdown-color" aria-labelledby="dropdownMenuLink">
+      <a class="dropdown-item dropdown-color" href="file:///C:\Users\akim4\Google Drive\CODE\FCCNotes\FCCNotes\FCCNotes.html">HTML/CSS</a> <!--disabled in class quotes before href to disable it-->
+      <div class="dropdown-divider"></div>
+      <a class="dropdown-item dropdown-color" href="file:///C:\Users\akim4\Google Drive\CODE\FCCNotes\FCCNotes\BOOTSTRAP.html">BOOTSTRAP</a>
+      <div class="dropdown-divider"></div>
+      <a class="dropdown-item dropdown-color" href="file:///C:\Users\akim4\Google Drive\CODE\FCCNotes\FCCNotes\JQUERY.html">JQUERY</a>
+      <div class="dropdown-divider"></div>
+      <a class="dropdown-item dropdown-color" href="#">TBA</a>
+      <div class="dropdown-divider dropdown-color"></div>
+      <a class="dropdown-item dropdown-color" href="#">TBA</a>
+      </div>
+    </div>
+<!-----------Search Bar------------>
+      <form class="form-inline my-2 my-lg-0 ">
+        <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0 searchbar-color" type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+      </form>
+
+    </div>
+  </nav>
+</div>
+
+      <body>
+<div class="textarea" contenteditable="true">
+
+
+
+
+
+<ol>
+  <!--------------------------------------------------------------------------------------------->
+  <li>
+  <h2>Learn how Script Tags and Document Ready Work</h2>
+  <p2>
+    Now we're ready to learn jQuery, the most popular JavaScript tool of all time. Before we can start using jQuery, we need to add some things to our HTML.
+<br>
+<br>
+    First, add a <div class=smalltextarea>script</div> element at the top of your page. Be sure to close it on the following line.
+    <textarea><script></script></textarea>
+
+    Your browser will run any JavaScript inside a <div class=smalltextarea>script</div> element, including jQuery.
+
+    Inside your <div class=smalltextarea>script</div> element, add this code (still inside your script element):
+    <textarea>$(document).ready(function() { });</textarea>
+
+Which then should look like this:
+<textarea><script>
+  $(document).ready(function() {
+  });
+</script>
+</textarea>
+
+   The important thing to know is that code you put inside this <div class=smalltextarea>function</div> will run as soon as your browser has loaded your page.
+<br>
+<br>
+    This is important because without your <div class=smalltextarea>document ready function</div>, your code may run before your HTML is rendered, which would cause bugs.
+  </p2>
+  </li>
+  <hr>
+  <!--------------------------------------------------------------------------------------------->
+  <li>
+  <h2>Target HTML Elements with Selectors Using jQuery</h2>
+  <p2>
+    Now we have a document ready function.
+
+    All jQuery functions start with a <div class=smalltextarea>$</div>, usually referred to as a <div class=smalltextarea>dollar sign operator</div>, or as <div class=smalltextarea>bling</div>.
+<br>
+<br>
+    jQuery often selects an HTML element with a <div class=smalltextarea>selector</div>, then does something to that element.
+<br>
+<br>
+    For example, let's make all of your <div class=smalltextarea>button</div> elements bounce. Just add this code inside your document ready function:
+  <textarea>$("button").addClass("animated bounce");</textarea>
+
+    Note that FreeCodeCamp has already included both the jQuery library and the Animate.css library in the background so that you can use them in the editor.
+    <br>
+    <br>
+    So you are using jQuery to apply the Animate.css <div class=smalltextarea>bounce</div> class to your <div class=smalltextarea>button</div> elements.
+
+    Additionally make sure to use <textarea>$("button").addClass("animated bounce");</textarea> instead of <textarea>$('button').addClass("animated bounce");</textarea> since single-quote selectors will not pass our tests like this:
+    <br>
+    <br>
+    Finished example:
+    <textarea><script>
+  $(document).ready(function() {
+  $("button").addClass("animated bounce");
+  });
+</script>
+</textarea>
+  </p2>
+  </li>
+  <hr>
+  <!--------------------------------------------------------------------------------------------->
+  <li>
+  <h2>Target Elements by Class Using jQuery</h2>
+  <p2>
+    You see how we made all of your <div class=smalltextarea>button</div> elements bounce? We selected them with <div class=smalltextarea>$("button")</div>, then we added some CSS classes to them with <textarea>.addClass("animated bounce");</textarea>
+
+You just used jQuery's <div class=smalltextarea>.addClass()</div> function, which allows you to add classes to elements.
+<br>
+<br>
+First, let's target your <div class=smalltextarea>div</div> elements with the class <div class=smalltextarea>well</div> by using the <div class=smalltextarea>$(".well")</div> selector.
+<br>
+<br>
+Note that, just like with CSS declarations, you type a <div class=smalltextarea>.</div> before the class's name.
+<br>
+<br>
+Then use jQuery's <div class=smalltextarea>.addClass()</div> function to add the classes <div class=smalltextarea>animated</div> and <div class=smalltextarea>shake</div>.
+<br>
+<br>
+Making all the elements with the class <div class=smalltextarea>.well</div> shake by adding the following to your <div class=smalltextarea>document ready function</div> would look like this:
+<br>
+<br>
+Finished example:
+<textarea>
+  <script>
+  $(document).ready(function() {
+    $("button").addClass("animated bounce");
+    $(".well").addClass("animated shake");
+  });
+</script>
+</textarea>
+  </p2>
+  </li>
+  <hr>
+  <!--------------------------------------------------------------------------------------------->
+  <li>
+  <h2>Target Elements by ID Using jQuery</h2>
+  <p2>
+    You can also target elements by their id attributes.
+<br>
+<br>
+    First target your <div class=smalltextarea>button</div> element with the id <div class=smalltextarea>target3</div> by using the <div class=smalltextarea>$("#target3")</div> selector.
+<br>
+<br>
+    Note that, just like with CSS declarations, you type a <div class=smalltextarea>#</div> before the id's name.
+<br>
+<br>
+    Then use jQuery's <div class=smalltextarea>.addClass()</div> function to add the classes <div class=smalltextarea>animated and fadeOut</div>.
+<br>
+<br>
+    Making the <div class=smalltextarea>button</div> element with the id <div class=smalltextarea>#target3</div> fade out would look like this:
+<br>
+<br>
+    Finished Example:
+    <textarea>
+      <script>
+        $(document).ready(function() {
+          $("button").addClass("animated bounce");
+          $(".well").addClass("animated shake");
+          $("#target3").addClass("animated fadeOut")
+        });
+      </script>
+    </textarea>
+  </p2>
+  </li>
+  <hr>
+  <!--------------------------------------------------------------------------------------------->
+  <li>
+  <h2>Target the same element with multiple jQuery </h2>
+  <p2>
+    Now you know three ways of targeting elements: by type: <div class=smalltextarea>$("button")</div>, by class: <div class=smalltextarea>$(".btn")</div>, and by id <div class=smalltextarea>$("#target1")</div>.
+<br>
+<br>
+    Although it is possible to add multiple classes in a single <div class=smalltextarea>.addClass()</div> call, let's add them to the same element in three separate ways.
+<br>
+<br>
+    Using <div class=smalltextarea>.addClass()</div>, add only one class at a time to the same element, three different ways:
+<br>
+<br>
+    Add the <div class=smalltextarea>animated</div> class to all elements with type <div class=smalltextarea>button</div>.
+<br>
+<br>
+    Add the <div class=smalltextarea>shake</div> class to all the buttons with class <div class=smalltextarea>.btn</div>.
+<br>
+<br>
+    Add the <div class=smalltextarea>btn-primary</div> class to the button with id <div class=smalltextarea>#target1</div>.
+<br>
+<br>
+    Note
+    You should only be targeting one element and adding only one class at a time. Altogether, your three individual selectors will end up adding the three classes <div class=smalltextarea>shake</div>, <div class=smalltextarea>animated</div>, and <div class=smalltextarea>btn-primary</div> to <div class=smalltextarea>#target1</div>, and it would look like this:
+    <br>
+    <br>
+Finished Example:
+    <textarea>
+      <script>
+          $(document).ready(function() {
+            $("button").addClass("animated");
+            $(".btn").addClass("shake");
+            $("#target1").addClass("btn-primary")
+            });
+      </script>
+    </textarea>
+  </p2>
+  </li>
+  <hr>
+  <!--------------------------------------------------------------------------------------------->
+  <li>
+  <h2>Remove Classes from an element with jQuery</h2>
+  <p2>
+    In the same way you can add classes to an element with jQuery's <div class=smalltextarea>addClass()</div> function, you can remove them with jQuery's <div class=smalltextarea>removeClass()</div> function.
+    <br>
+    <br>
+    Here's how you would do this for a specific button:
+
+    <textarea>$("#target2").removeClass("btn-default");</textarea>
+
+    Removing the <div class=smalltextarea>btn-default</div> class from all of our <div class=smalltextarea>button</div> elements would look like this:
+    <br>
+    <br>
+    Finished example:
+    <textarea>
+      <script>
+        $(document).ready(function() {
+          $("button").addClass("animated bounce");
+          $(".well").addClass("animated shake");
+          $("#target3").addClass("animated fadeOut");
+          $("button").removeClass("btn-default");
+        });
+      </script>
+    </textarea>
+  </p2>
+  </li>
+  <hr>
+  <!--------------------------------------------------------------------------------------------->
+  <li>
+  <h2>Change the CSS of an Element Using jQuery</h2>
+  <p2>
+    We can also change the CSS of an HTML element directly with jQuery.
+<br>
+<br>
+    jQuery has a function called <div class=smalltextarea>.css()</div> that allows you to change the CSS of an element.
+<br>
+<br>
+    Here's how we would change its color to blue:
+<textarea>
+    $("#target1").css("color", "blue");
+</textarea>
+    This is slightly different from a normal CSS declaration, because the CSS property and its value are in quotes, and separated with a comma instead of a colon.
+    <br>
+    <br>
+    Changing the <div class=smalltextarea>.CSS</div> of <div class=smalltextarea>#target1</div> would look like this:
+<br>
+<br>
+Finished example:
+<textarea>
+  <script>
+    $(document).ready(function() {
+     $("#target1").css("color", "red");
+    });
+  </script>
+</textarea>
+  </p2>
+  </li>
+  <hr>
+  <!--------------------------------------------------------------------------------------------->
+  <li>
+  <h2>Disable an Element Using jQuery</h2>
+  <p2>
+    You can also change the non-CSS properties of HTML elements with jQuery. For example, you can disable buttons.
+    <br>
+    <br>
+    When you disable a button, it will become grayed-out and can no longer be clicked.
+    <br>
+    <br>
+    jQuery has a function called <div class=smalltextarea>.prop()</div> that allows you to adjust the properties of elements.
+    <br>
+    <br>
+    Here's how you would disable all buttons:
+    <textarea>
+    $("button").prop("disabled", true);
+  </textarea>
+    Disabling only the <div class=smalltextarea>target1</div> button would look like this:
+<br>
+<br>
+Finished example:
+    <textarea>
+<script>
+  $(document).ready(function() {
+    $("#target1").css("color", "red");
+$("#target1").prop("disabled", true);
+  });
+</script>
+</textarea>
+  </p2>
+  </li>
+  <hr>
+  <!--------------------------------------------------------------------------------------------->
+  <li>
+  <h2>Change Text Inside an Element Using jQuery</h2>
+  <p2>
+    Using jQuery, you can change the text between the start and end tags of an element. You can even change HTML markup.
+<br>
+<br>
+    jQuery has a function called <div class=smalltextarea>.html()</div> that lets you add HTML tags and text within an element. Any content previously within the element will be completely replaced with the content you provide using this function.
+<br>
+<br>
+    Here's how you would rewrite and emphasize the text of our heading:
+<textarea>
+    $("h3").html("<em>jQuery Playground</em>");
+</textarea>
+    jQuery also has a similar function called <div class=smalltextarea>.text()</div> that only alters text without adding tags. In other words, this function will not evaluate any HTML tags passed to it, but will instead treat it as the text you want to replace the existing content with.
+<br>
+<br>
+    Changing the button with id <div class=smalltextarea>target4</div> by <div class=smalltextarea>emphasizing</div> its text would look like this:
+    <br>
+    <br>
+    Finished example:
+    <textarea>
+      <script>
+        $(document).ready(function() {
+          $("#target1").css("color", "red");
+          $("#target4").html("<em>#target4</em>");
+        });
+      </script>
+    </textarea>
+  </p2>
+  </li>
+  <hr>
+  <!--------------------------------------------------------------------------------------------->
+  <li>
+  <h2>Remove an Element Using jQuery</h2>
+  <p2>
+    Now let's remove an HTML element from your page using jQuery.
+<br>
+<br>
+    jQuery has a function called <div class=smalltextarea>.remove()</div> that will remove an HTML element entirely
+<br>
+<br>
+    Removing element <div class=smalltextarea>target4</div> from the page by using the <div class=smalltextarea>.remove()</div> function would look like this:
+    <br>
+    <br>
+    Finished example:
+    <textarea>
+      <script>
+        $(document).ready(function() {
+          $("#target1").css("color", "red");
+          $("#target1").prop("disabled", true);
+          $("#target4").remove();
+        });
+      </script>
+    </textarea>
+  </p2>
+  </li>
+  <hr>
+  <!--------------------------------------------------------------------------------------------->
+  <li>
+  <h2>Use appendTo to Move Elements with jQuery</h2>
+  <p2>
+    Now let's try moving elements from one <div class=smalltextarea>div</div> to another.
+    <br>
+    <br>
+    jQuery has a function called <div class=smalltextarea>appendTo()</div> that allows you to select HTML elements and append them to another element.
+    <br>
+    <br>
+    For example, if we wanted to move <div class=smalltextarea>target4</div> from our right well to our left well, we would use:
+    <textarea>
+    $("#target4").appendTo("#left-well");
+  </textarea>
+    Moving your <div class=smalltextarea>target2</div> element from your <div class=smalltextarea>left-well</div> to your <div class=smalltextarea>right-well</div> would look like this:
+    <br>
+    <br>
+    Finished example:
+    <textarea>
+      <script>
+        $(document).ready(function() {
+          $("#target1").css("color", "red");
+          $("#target1").prop("disabled", true);
+          $("#target4").remove();
+          $("#target2").appendTo("#right-well");
+        });
+      </script>
+    </textarea>
+  </p2>
+  </li>
+  <hr>
+  <!--------------------------------------------------------------------------------------------->
+  <li>
+  <h2>Clone an Element Using jQuery</h2>
+  <p2>
+    In addition to moving elements, you can also copy them from one place to another.
+<br>
+<br>
+    jQuery has a function called <div class=smalltextarea>clone()</div> that makes a copy of an element.
+<br>
+<br>
+    For example, if we wanted to copy <div class=smalltextarea>target2</div> from our <div class=smalltextarea>left-well</div> to our <div class=smalltextarea>right-well</div>, we would use:
+<textarea>
+    $("#target2").clone().appendTo("#right-well");
+</textarea>
+    Did you notice this involves sticking two jQuery functions together? This is called <div class=smalltextarea>function chaining</div> and it's a convenient way to get things done with jQuery.
+<br>
+<br>
+    Cloning your <div class=smalltextarea>target5</div> element and appending it to your <div class=smalltextarea>left-well</div> would look like this:
+    <br>
+    <br>
+    Finished example:
+    <textarea>
+      <script>
+        $(document).ready(function() {
+          $("#target1").css("color", "red");
+          $("#target1").prop("disabled", true);
+          $("#target4").remove();
+          $("#target2").appendTo("#right-well");
+          $("#target5").clone().appendTo("#left-well");
+        });
+      </script>
+    </textarea>
+  </p2>
+  </li>
+  <hr>
+  <!--------------------------------------------------------------------------------------------->
+  <li>
+  <h2>Target the Parent of an Element Using jQuery</h2>
+  <p2>
+    Every HTML element has a <div class=smalltextarea>parent</div> element from which it <div class=smalltextarea>inherits</div> properties.
+    <br>
+    <br>
+    For example, your <div class=smalltextarea>jQuery Playground</div> <div class=smalltextarea>h3</div> element has the parent element of <textarea><div class="container-fluid"></textarea>, which itself has the parent <div class=smalltextarea>body</div>.
+    <br>
+    <br>
+    jQuery has a function called <div class=smalltextarea>parent()</div> that allows you to access the parent of whichever element you've selected.
+    <br>
+    <br>
+    Here's an example of how you would use the <div class=smalltextarea>parent()</div> function if you wanted to give the parent element of the <div class=smalltextarea>left-well</div> element a background color of blue:
+    <textarea>
+    $("#left-well").parent().css("background-color", "blue")
+  </textarea>
+    Giving the parent of the <div class=smalltextarea>#target1</div> element a background-color of red would look like this:
+    <br>
+    <br>
+    <textarea>
+      <script>
+        $(document).ready(function() {
+          $("#target1").css("color", "red");
+          $("#target1").prop("disabled", true);
+          $("#target4").remove();
+          $("#target2").appendTo("#right-well");
+          $("#target5").clone().appendTo("#left-well");
+          $("#target1").parent().css("background-color", "red");
+        });
+      </script>
+      ----------------
+    </textarea>
+  </p2>
+  </li>
+  <hr>
+  <!--------------------------------------------------------------------------------------------->
+  <li>
+  <h2>Target the Children of an Element Using jQuery</h2>
+  <p2>
+    Many HTML elements have <div class=smalltextarea>children</div> which <div class=smalltextarea>inherit</div> their properties from their parent HTML elements.
+<br>
+<br>
+    For example, every HTML element is a child of your <div class=smalltextarea>body</div> element, and your "jQuery Playground" <div class=smalltextarea>h3</div> element is a child of your <textarea><div class="container-fluid"></textarea> element.
+
+    jQuery has a function called <div class=smalltextarea>children()</div> that allows you to access the children of whichever element you've selected.
+<br>
+<br>
+    Here's an example of how you would use the <div class=smalltextarea>children()</div> function to give the children of your <div class=smalltextarea>left-well</div> element the color of blue:
+<textarea>
+    $("#left-well").children().css("color", "blue")
+</textarea>
+    Giving all the children of your <div class=smalltextarea>#right-well</div> element a color of orange would look like this:
+    <br>
+    <br>
+    Finished example:
+    <textarea>
+      <script>
+        $(document).ready(function() {
+          $("#target1").css("color", "red");
+          $("#target1").prop("disabled", true);
+          $("#target4").remove();
+          $("#target2").appendTo("#right-well");
+          $("#target5").clone().appendTo("#left-well");
+          $("#target1").parent().css("background-color", "red");
+          $("#right-well").children().css("color", "orange");
+        });
+      </script>
+    </textarea>
+  </p2>
+  </li>
+  <hr>
+  <!--------------------------------------------------------------------------------------------->
+  <li>
+  <h2>Target a Specific Child of an Element Using jQuery</h2>
+  <p2>
+    You've seen why id attributes are so convenient for targeting with jQuery selectors. But you won't always have such neat ids to work with.
+    <br>
+    <br>
+    Fortunately, jQuery has some other tricks for targeting the right elements.
+    <br>
+    <br>
+    jQuery uses CSS Selectors to target elements. <div class=smalltextarea>target:nth-child(n)</div> css selector allows you to select all the nth elements with the target class or element type.
+    <br>
+    <br>
+    Here's how you would give the third element in each well the bounce class:
+    <textarea>
+    $(".target:nth-child(3)").addClass("animated bounce");
+  </textarea>
+    Making the second child in each of your well elements bounce by targeting the children of element with the target class, would look like this:
+    <br>
+    <br>
+    Finished example:
+    <textarea>
+      <script>
+        $(document).ready(function() {
+          $("#target1").css("color", "red");
+          $("#target1").prop("disabled", true);
+          $("#target4").remove();
+          $("#target2").appendTo("#right-well");
+          $("#target5").clone().appendTo("#left-well");
+          $("#target1").parent().css("background-color", "red");
+          $("#right-well").children().css("color", "orange");
+          $(".target:nth-child(2)").addClass("animated bounce");
+        });
+      </script>
+    </textarea>
+  </p2>
+  </li>
+  <hr>
+  <!--------------------------------------------------------------------------------------------->
+  <li>
+  <h2>Target Even Numbered Elements Using jQuery</h2>
+  <p2>
+    You can also target all the even-numbered elements.
+    <br>
+    <br>
+    Here's how you would target all the odd-numbered elements with class <div class=smalltextarea>target</div> and give them classes:
+<textarea>
+    $(".target:odd").addClass("animated shake");
+</textarea>
+    Note that jQuery is zero-indexed, meaning that, counter-intuitively, <div class=smalltextarea>:odd</div> selects the second element, fourth element, and so on.
+<br>
+<br>
+    Selecting all the even-numbered elements and giving them the classes of animated and shake would look like this:
+    <br>
+    <br>
+    Finished example:
+    <textarea>
+      <script>
+        $(document).ready(function() {
+          $("#target1").css("color", "red");
+          $("#target1").prop("disabled", true);
+          $("#target4").remove();
+          $("#target2").appendTo("#right-well");
+          $("#target5").clone().appendTo("#left-well");
+          $("#target1").parent().css("background-color", "red");
+          $("#right-well").children().css("color", "orange");
+          $("#left-well").children().css("color", "green");
+          $(".target:nth-child(2)").addClass("animated bounce");
+          $(".target:even").addClass("animated shake");
+        });
+      </script>
+    </textarea>
+  </p2>
+  </li>
+  <hr>
+  <!--------------------------------------------------------------------------------------------->
+  <li>
+  <h2>Use jQuery to Modify the Entire Page</h2>
+  <p2>
+    We're done playing with our jQuery playground. Let's tear it down!
+
+    jQuery can target the <div class=smalltextarea>body</div> element as well.
+
+    Here's how we would make the entire body fade out:
+<textarea>
+    $("body").addClass("animated fadeOut");
+</textarea>
+    Adding the classes <div class=smalltextarea>animated</div> and <div class=smalltextarea>hinge</div> to your <div class=smalltextarea>body</div> element would look like this:
+    <br>
+    <br>
+    <textarea>
+      <script>
+        $(document).ready(function() {
+          $("#target1").css("color", "red");
+          $("#target1").prop("disabled", true);
+          $("#target4").remove();
+          $("#target2").appendTo("#right-well");
+          $("#target5").clone().appendTo("#left-well");
+          $("#target1").parent().css("background-color", "red");
+          $("#right-well").children().css("color", "orange");
+          $("#left-well").children().css("color", "green");
+          $(".target:nth-child(2)").addClass("animated bounce");
+          $(".target:even").addClass("animated shake");
+          $("body").addClass("animated hinge");
+        });
+      </script>
+    </textarea>
+  </p2>
+  </li>
+  <!--------------------------------------------------------------------------------------------->
+</ol>
+</div>
+
+
+<!----------- Navigation buttons------------>
+<br>
+<div class="container-fluid">
+<div class="row">
+  <span>
+<a class="btn btn-info dropdown-color" href="file:///C:\Users\akim4\Google Drive\CODE\FCCNotes\FCCNotes\BOOTSTRAP.html"><i class="fa fa-angle-double-left" aria-hidden="true"></i> Previous Lesson</a>
+<a class="btn btn-info dropdown-color" href="#">Next Lesson <i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
+</span>
+</div>
+</div>
+</body>
+
+</html>

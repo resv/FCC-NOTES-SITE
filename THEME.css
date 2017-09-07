@@ -1,0 +1,172 @@
+body {
+    background-color: #333333;
+    /*border: 10px solid powderblue;*/
+    padding-left: 3%;
+    padding-right: 6%;
+    padding-top: 7%;
+    padding-bottom: 3%;
+}
+
+h2 {
+  color:#999999;
+  text-decoration: underline;
+  font-family: 'Lato', sans-serif;
+  font-size: 160%;
+  display:block;
+}
+
+p2 {
+  color:#999999;
+  /*text-decoration: ;*/
+  font-family: 'Lato', sans-serif;
+  font-size: 100%;
+  /*margin: 50px; //indents but don't need*/
+  /*border: 1px solid powderblue;*/
+  /*padding: 1px;*/
+}
+
+p3{
+    color:#ffffff;
+    /*text-decoration: ;*/
+    font-family: 'Lato', sans-serif;
+    font-size: 80%;
+    /*margin: 50px; //indents but don't need*/
+    /*border: 1px solid powderblue;*/
+    /*padding: 1px;*/
+}
+
+p4{
+    color:#ffffff;
+    /*text-decoration: ;*/
+    font-family: 'Lato', sans-serif;
+    font-size: 120%;
+    /*margin: 50px; //indents but don't need*/
+    /*border: 1px solid powderblue;*/
+    /*padding: 1px;*/
+}
+
+p5{
+    color:#ffffff;
+    /*text-decoration: ;*/
+    font-family: 'Lato', sans-serif;
+    font-size: 160%;
+    /*margin: 50px; //indents but don't need*/
+    /*border: 1px solid powderblue;*/
+    /*padding: 1px;*/
+}
+
+h4 {
+  color:#999999;
+  font-family: 'Lato', sans-serif;
+  font-size: 160%;
+  display:block;
+}
+
+.smalltextarea {
+  display:inline;
+  color:#ffffff;  /* Original color: #949494; */
+  font-family: CONSOLAS;
+  font-size: 90%;
+  background-color: #242424;
+  border: 1px solid #515151;
+  text-align: center;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  padding-right: 5px;
+  padding-left: 5px;
+}
+
+textarea {
+    color:#ffffff;  /* Original color: #949494; */
+    font-family: CONSOLAS;
+    font-size: 90%;
+    background-color: #242424;
+    border: 1px solid #515151;
+    /*In charge of placing the block correctly with a line break*/
+    display:block;
+    /*This edits INSIDE the text area*/
+    text-align: left;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding-right: 1%;
+    padding-left: 1%;
+    /*This edits the OUTSIDE POSITION of the text area*/
+    min-width: 800px;
+    min-height: 0px;
+
+      margin-top: 10px;
+      margin-bottom: 10px;
+      margin-left: 100px;
+      margin-right: 0px;
+      /*This takes out scroll bars, the overflow is specifically for IE*/
+      overflow: auto;
+      resize: none;
+  }
+
+/*horizontal line color*/
+hr {
+  border-color: #FFFFFF;
+}
+
+/*horizontal line style 2 Gradient transparent - color - transparent */
+.hr-fade {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0));
+}
+
+.image-green-boarder {
+  border-color: #006400;
+  border-width: 5px;
+  border-style: solid;
+}
+
+/* -------------------------------navbar -----------------------------*/
+/*nav bar margin*/
+.fixed-top {
+  margin-bottom: px;
+  margin-left: -0px;
+  margin-right: -0px;
+  margin-top: 0px;
+}
+/*FCC BRAND*/
+.navbar-brand-color {
+    background-color: #006400;
+    color: #FFFFFF;
+    border-radius:0;
+    font-family: MONOSPACE;
+    font-size: 200%;
+}
+.navbar-brand:hover {
+    color: #333333;
+}
+/*about, contact hover*/
+.nav-link:hover{
+    color: #333333;
+}
+/*about, contact*/
+.navbar-color {
+    background-color: #006400;
+    color: #FFFFFF;
+    border-radius:0;
+    font-family: 'Lato', sans-serif;
+    font-size: 110%;
+}
+/*dropdown map*/
+.dropdown-color {
+    font-family: 'Lato', sans-serif;
+    color: #CCCCCC;
+    background-color: #333333;
+}
+/*search bar*/
+.searchbar-color {
+  background-color: #006400;
+  color: #FFFFFF;
+  font-family: 'Lato', sans-serif;
+}
+/* ------------------------------------------------------------------------- */
+/*Bootstrap column centering*/
+.col-centered{
+    float: none;
+    margin: 0 auto;
+}

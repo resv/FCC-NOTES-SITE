@@ -1,0 +1,418 @@
+
+
+<html>
+  <head>
+    <title>BOOTSTRAP</title>
+    <!--------------------------------------Google Fonts----------------------------------------------------------->
+      <link href="https://fonts.googleapis.com/css?family=Lato|Droid+Sans+Mono|Encode+Sans:500|Roboto+Condensed:300,400" rel="stylesheet">
+    <!--------------------------------------Bootstrap CSS---------------------------------------------------------->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <!----------------------------Bootstrap Plugins:JS, Popper, and jQuery----------------------------------------->
+      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+    <!--------------------------------------FONT AWESOME----------------------------------------------------------->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!---------------------------------------Local CSS------------------------------------------------------------->
+      <link rel="stylesheet" type="text/css" href="THEME.css">
+
+  </head>
+
+
+  <!-------------------------------------NAV BAR -------------------------------------------------->
+<div class="container">
+  <nav class="navbar fixed-top navbar-expand-lg navbar-color">
+<!----------- Navbar FreeCodeCamp -------->
+    <a class="navbar-brand navbar-brand-color " href="file:///C:\Users\akim4\Google Drive\CODE\FCCNotes\FCCNotes\FCCNotes.html">FreeCodeCamp's <i class="fa fa-free-code-camp" aria-hidden="true"></i> Notes</a>
+<!-------------- Navbar About ------------>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link navbar-color" href="file:///C:\Users\akim4\Google Drive\CODE\FCCNotes\FCCNotes\ABOUT.html"><i class="fa fa-info-circle" aria-hidden="true"></i> About<span class="sr-only">(current)</span></a>
+        </li>
+<!-------- Forum Button ----------->
+        <li class="nav-item">
+          <a class="nav-link navbar-color" href="https://forum.freecodecamp.org/latest"><i class="fa fa-list" aria-hidden="true"></i> Forum</a>
+        </li>
+<!-------- Gitter Button ----------->
+        <li class="nav-item">
+          <a class="nav-link navbar-color" href="https://gitter.im/FreeCodeCamp/FreeCodeCamp"><i class="fa fa-comments" aria-hidden="true"></i> Gitter</a>
+        </li>
+
+
+<!-------- Navbar Contact Button ----------->
+        <li class="nav-item">
+          <a class="nav-link navbar-color" href="file:///C:\Users\akim4\Google Drive\CODE\FCCNotes\FCCNotes\CONTACT.html"><i class="fa fa-envelope" aria-hidden="true"></i> Contact</a>
+        </li>
+<!--------Navbar By: Adam Kim / GITHUB ---->
+      <li class="nav-item">
+        <a class="nav-link navbar-color" href="https://github.com/resv"><i class="fa fa-github" aria-hidden="true"></i> By: Adam Kim</a>
+       </li>
+
+
+      </ul>
+<!--------- Navbar Drop Down Bar ----------->
+      <div class="dropdown show">
+      <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-bars" aria-hidden="true"></i></a>
+
+    <div class="dropdown-menu dropdown-color" aria-labelledby="dropdownMenuLink">
+      <a class="dropdown-item dropdown-color" href="file:///C:\Users\akim4\Google Drive\CODE\FCCNotes\FCCNotes\FCCNotes.html">HTML/CSS</a> <!--disabled in class quotes before href to disable it-->
+      <div class="dropdown-divider"></div>
+      <a class="dropdown-item dropdown-color" href="file:///C:\Users\akim4\Google Drive\CODE\FCCNotes\FCCNotes\BOOTSTRAP.html">BOOTSTRAP</a>
+      <div class="dropdown-divider"></div>
+      <a class="dropdown-item dropdown-color" href="file:///C:\Users\akim4\Google Drive\CODE\FCCNotes\FCCNotes\JQUERY.html">JQUERY</a>
+      <div class="dropdown-divider"></div>
+      <a class="dropdown-item dropdown-color" href="#">TBA</a>
+      <div class="dropdown-divider dropdown-color"></div>
+      <a class="dropdown-item dropdown-color" href="#">TBA</a>
+      </div>
+    </div>
+<!-----------Search Bar------------>
+      <form class="form-inline my-2 my-lg-0 ">
+        <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0 searchbar-color" type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+      </form>
+
+    </div>
+  </nav>
+</div>
+
+      <body>
+<div class="textarea" contenteditable="true">
+
+
+
+
+
+<ol>
+  <!--------------------------------------------------------------------------------------------->
+  <li>
+  <h2>Use Responsive Design with Bootstrap Fluid Containers</h2>
+  <p2>
+    In the HTML5 and CSS section of FreeCodeCamp we built a Cat Photo App. Now let's go back to it. This time, we'll style it using the popular Bootstrap <div class=smalltextarea>responsive CSS framework</div>.
+<br>
+<br>
+    Bootstrap will figure out how wide your screen is and respond by resizing your HTML elements - hence the name Responsive Design.
+<br>
+<br>
+    With responsive design, there is no need to design a mobile version of your website. It will look good on devices with screens of any width.
+<br>
+<br>
+    You can add Bootstrap to any app by adding the following code to the top of your HTML:
+
+    <textarea><link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css"/></textarea>
+  </p2>
+  </li>
+  <hr>
+  <!--------------------------------------------------------------------------------------------->
+  <li>
+  <h2>Make Images Mobile Responsive</h2>
+  <p2>
+    It would be great if images could be exactly the width of our phone's screen.
+<br>
+<br>
+    Fortunately, with Bootstrap, all we need to do is add the <div class=smalltextarea>img-responsive</div> class to your image.
+<br>
+<br>
+    Do this, and the image should perfectly fit the width of your page.
+  </p2>
+  </li>
+  <hr>
+  <!--------------------------------------------------------------------------------------------->
+  <li>
+  <h2>Center Text with Bootstrap</h2>
+  <p2>
+    Now that we're using Bootstrap, we can center our heading element to make it look better. All we need to do is add the class <div class=smalltextarea>text-center</div> to our <div class=smalltextarea>h2</div> element.
+<br>
+<br>
+    Remember that you can add several classes to the same element by separating each of them with a space, like this:
+
+    <textarea><h2 class="red-text text-center">your text</h2></textarea>
+  </p2>
+  </li>
+  <hr>
+  <!--------------------------------------------------------------------------------------------->
+  <li>
+  <h2>Create a Bootstrap Button</h2>
+  <p2>
+    Bootstrap has its own styles for <div class=smalltextarea>button</div> elements, which look much better than the plain HTML ones.
+  </p2>
+  </li>
+  <hr>
+  <!--------------------------------------------------------------------------------------------->
+  <li>
+  <h2>Create a Block Element Bootstrap Button</h2>
+  <p2>
+    Normally, your <div class=smalltextarea>button</div> elements with a class of <div class=smalltextarea>btn</div> are only as wide as the text that they contain. For example:
+
+    <textarea><button class="btn">Submit</button></textarea>
+
+    This button would only be as wide as the word "Submit".
+<br>
+<br>
+    <button class="btn">Submit</button>
+<br>
+<br>
+    By making them block elements with the additional class of <div class=smalltextarea>btn-block</div>, your button will stretch to fill your page's entire horizontal space and any elements following it will flow onto a "new line" below the block.
+
+    <textarea><button class="btn btn-block">Submit</button></textarea>
+
+    This button would take up 100% of the available width:
+<br>
+<br>
+    <button class="btn btn-block">Submit</button>
+    (Note that these buttons still need the <div class=smalltextarea>btn</div> class)
+  </p2>
+  </li>
+  <hr>
+  <!--------------------------------------------------------------------------------------------->
+  <li>
+  <h2>Taste the Bootstrap Button Color Rainbow</h2>
+  <p2>
+    The <div class=smalltextarea>btn-primary</div> class is the main color you'll use in your app. It is useful for highlighting actions you want your user to take.
+<br>
+<br>
+    (Note that this button will still need the <div class=smalltextarea>btn</div> and <div class=smalltextarea>btn-block</div> classes)
+  </p2>
+  </li>
+  <hr>
+  <!--------------------------------------------------------------------------------------------->
+  <li>
+  <h2>Call out Optional Actions with Button Info</h2>
+  <p2>
+    Bootstrap comes with several pre-defined colors for buttons. The <div class=smalltextarea>btn-info</div> class is used to call attention to optional actions that the user can take.
+    <br>
+    <br>
+    (Note that these buttons still need the <div class=smalltextarea>btn</div> and <div class=smalltextarea>btn-block</div> classes)
+  </p2>
+  </li>
+  <hr>
+  <!--------------------------------------------------------------------------------------------->
+  <li>
+  <h2>Warn your Users of a Dangerous Action</h2>
+  <p2>
+    Bootstrap comes with several pre-defined colors for buttons. The <div class=smalltextarea>btn-danger</div> class is the button color you'll use to notify users that the button performs a destructive action, such as deleting a cat photo.
+    <br>
+    <br>
+    (Note that these buttons still need the <div class=smalltextarea>btn</div> and <div class=smalltextarea>btn-block</div> classes)
+  </p2>
+  </li>
+  <hr>
+  <!--------------------------------------------------------------------------------------------->
+  <li>
+  <h2>Use the Bootstrap Grid to Put Elements Side By Side </h2>
+  <p2>
+    Bootstrap uses a responsive grid system, which makes it easy to put elements into rows and specify each element's relative width. Most of Bootstrap's classes can be applied to a <div class=smalltextarea>div</div> element.
+    <br>
+    <br>
+    Here's a diagram of how Bootstrap's 12-column grid layout works:
+    <br>
+    <br>
+      <img class="image-green-boarder img-responsive" src="https://i.imgur.com/FaYuui8.png" alt="This image must of been removed from imgur address, Please report this using the contact page.">
+      <br>
+      <br>
+    (Image illustrating Bootstrap's grid system)
+    <br>
+    <br>
+    Note that in this illustration, <div class=smalltextarea>the col-md-*</div> class is being used. Here, <div class=smalltextarea>md</div> means medium, and <div class=smalltextarea>*</div> is a number specifying how many columns wide the element should be.
+    <br>
+    <br>
+    In this case, the column width of an element on a medium-sized screen, such as a laptop, is being specified.
+  </p2>
+  </li>
+  <hr>
+  <!--------------------------------------------------------------------------------------------->
+  <li>
+  <h2>Ditch Custom CSS for Bootstrap</h2>
+  <p2>
+    Don't worry - there will be plenty of time to customize our CSS later.
+  </p2>
+  </li>
+  <hr>
+  <!--------------------------------------------------------------------------------------------->
+  <li>
+  <h2>Use Spans for Inline Elements </h2>
+  <p2>
+    You can use spans to create inline elements. Remember when we used the <div class=smalltextarea>btn-block</div> class to make the button fill the entire row?
+    <br>
+    <br>
+    This image illustrates the difference between inline elements and block-level elements:
+    <br>
+    <br>
+    <img class="image-green-boarder img-responsive" src=https://i.imgur.com/O32cDWE.png alt="This image must of been removed from imgur address, report to Resv using the contact page">
+    <br>
+    <br>
+
+    By using the <div class=smalltextarea>span</div> element, you can put several elements together, and even style different parts of the same element differently.
+    <br>
+    <br>
+    Here's an example of how you would do this with the "Top 3 things cats hate" element:
+
+    <textarea><p>Top 3 things cats <span class = "text-danger">hate:</span></p></textarea>
+  </p2>
+  </li>
+  <hr>
+  <!--------------------------------------------------------------------------------------------->
+  <li>
+  <h2>Create a Custom Heading </h2>
+  <p2>
+    You can make a simple heading for a Cat Photo App by putting the title and relaxing cat image in the same row.
+
+    Remember, Bootstrap uses a responsive grid system, which makes it easy to put elements into rows and specify each element's relative width. Most of Bootstrap's classes can be applied to a <div class=smalltextarea>div</div> element.
+    <br>
+    <br>
+    Here's a diagram of how Bootstrap's 12-column grid layout works:
+    <br>
+    <br>
+      <img class="image-green-boarder img-responsive" src=https://i.imgur.com/FaYuui8.png alt="This image must of been removed from imgur address, Please report this using the contact page.">
+      <br>
+    (An image illustrating Bootstrap's grid system)
+    <br>
+    <br>
+    Note that in this illustration, the <div class=smalltextarea>col-md-*</div> class is being used. Here, <div class=smalltextarea>md</div> means medium, and <div class=smalltextarea>*</div> is a number specifying how many columns wide the element should be.
+    <br>
+    <br>
+    In this case, the column width of an element on a medium-sized screen, such as a laptop, is being specified.
+    <br>
+    <br>
+    <div class=smalltextarea>col-xs-*</div>, where <div class=smalltextarea>xs</div> means extra small (like an extra-small mobile phone screen), and <div class=smalltextarea>*</div> is the number of columns specifying how many columns wide the element should be.
+  </p2>
+  </li>
+  <hr>
+  <!--------------------------------------------------------------------------------------------->
+  <li>
+  <h2>Add Font Awesome Icons to our Buttons</h2>
+  <p2>
+    Font Awesome is a convenient library of icons. These icons are vector graphics, stored in the <div class=smalltextarea>.svg</div> file format.
+    <br>
+    <br>
+    These icons are treated just like fonts. You can specify their size using pixels, and they will assume the font size of their parent HTML elements.
+    <br>
+    <br>
+    You can add Font Awesome to any app just by including it by adding the following code to the top of your HTML:
+
+    <textarea><link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"/></textarea>
+
+    The <div class=smalltextarea>i</div> element was originally used to make other elements italic, but is now commonly used for icons. You add the Font Awesome classes to the <div class=smalltextarea>i</div> element to turn it into an icon, for example:
+
+    <textarea><i class="fa fa-info-circle"></i></textarea>
+  </p2>
+  </li>
+  <hr>
+  <!--------------------------------------------------------------------------------------------->
+  <li>
+  <h2>Add Font Awesome Icons to all of our Buttons</h2>
+  <p2>
+    Font Awesome is a convenient library of icons. These icons are vector graphics, stored in the <div class=smalltextarea>.svg</div> file format.
+    <br>
+    <br>
+    These icons are treated just like fonts. You can specify their size using pixels, and they will assume the font size of their parent HTML elements.
+  </p2>
+  </li>
+  <hr>
+  <!--------------------------------------------------------------------------------------------->
+  <li>
+  <h2>Responsively Style Radio Buttons</h2>
+  <p2>
+    You can use Bootstrap's <div class=smalltextarea>col-xs-*</div> classes on <div class=smalltextarea>form</div> elements, too!
+
+    This way, what your radio tags will be evenly spread out across the page, regardless of how wide the screen resolution is.
+    <br>
+    <br>
+    Nest all of your radio buttons within a <textarea><div class="row"></textarea> element.
+    <br>
+    <br>
+    Then nest each of them within a <textarea><div class="col-xs-6"></textarea> element.
+
+  </p2>
+  </li>
+  <hr>
+  <!--------------------------------------------------------------------------------------------->
+  <li>
+  <h2>Responsively Style Checkboxes</h2>
+  <p2>
+    You can use Bootstrap's <div class=smalltextarea>col-xs-*</div> classes on <div class=smalltextarea>form</div> elements, too! This way, our checkboxes will be evenly spread out across the page, regardless of how wide the screen resolution is.
+    <br>
+    <br>
+    Nest all your checkboxes in a <textarea><div class="row"></textarea>
+    element.
+    <br>
+    <br>
+    Then nest each of them in a <textarea><div class="col-xs-4"></textarea> element.
+  </p2>
+  </li>
+  <hr>
+  <!--------------------------------------------------------------------------------------------->
+  <li>
+  <h2>Style Text Inputs as Form Controls</h2>
+  <p2>
+    You can add the <div class=smalltextarea>fa-paper-plane</div> Font Awesome icon by adding <textarea><i class="fa fa-paper-plane"></i></textarea> within your submit button element.
+  </p2>
+  </li>
+  <hr>
+  <!--------------------------------------------------------------------------------------------->
+  <li>
+  <h2>Line up Form Elements Responsively with Bootstrap</h2>
+  <p2>
+    Now let's get your form <div class=smalltextarea>input</div> and your submission button on the same line.
+    <br>
+    <br>
+    We'll do this the same way we have previously: by using a <div class=smalltextarea>div</div> element with the class <div class=smalltextarea>row</div>, and other <div class=smalltextarea>div</div> elements within it using the <div class=smalltextarea>col-xs-*</div> class.
+  </p2>
+  </li>
+  <hr>
+  <!--------------------------------------------------------------------------------------------->
+  <li>
+  <h2>Create a Bootstrap Headline</h2>
+  <p2>
+    Now let's build something from scratch to practice our HTML, CSS and Bootstrap skills. We'll build a jQuery playground, which we'll soon put to use in our jQuery challenges.
+    <br>
+    <br>
+    To start with, create an h3 element, with the text jQuery Playground. Color your h3 element with the text-primary Bootstrap class, and center it with the text-center Bootstrap class.
+  </p2>
+  </li>
+  <hr>
+  <!--------------------------------------------------------------------------------------------->
+  <li>
+  <h2>Create a Class to Target with jQuery Selectors</h2>
+  <p2>
+    Not every class needs to have corresponding CSS. Sometimes we create classes just for the purpose of selecting these elements more easily using jQuery.
+    <br>
+    <br>
+    For example: Give each of your <div class=smalltextarea>button</div> elements the class <div class=smalltextarea>target</div>.
+  </p2>
+  </li>
+  <hr>
+  <!--------------------------------------------------------------------------------------------->
+  <li>
+  <h2>Add ID Attributes to Bootstrap Elements</h2>
+  <p2>
+    Recall that in addition to class attributes, you can give each of your elements an <div class=smalltextarea>id</div> attribute.
+    <br>
+    <br>
+    Each id must be unique to a specific element and used only once per page.
+    Remember that you can give an element an id like this:
+
+    <textarea><div class="your-class-here" id="your-id-here"></textarea>
+
+      Remember that your <div class=smalltextarea>id</div> on your <div class=smalltextarea>CSS</div> must start with a <div class=smalltextarea>#</div> but that doesn't apply on your <div class=smalltextarea>HTML</div>.
+  </p2>
+  </li>
+  <!--------------------------------------------------------------------------------------------->
+</ol>
+</div>
+<!----------- Navigation buttons------------>
+<br>
+<div class="container-fluid">
+<div class="row">
+  <span>
+<a class="btn btn-info dropdown-color" href="file:///C:\Users\akim4\Google Drive\CODE\FCCNotes\FCCNotes\FCCNotes.html"><i class="fa fa-angle-double-left" aria-hidden="true"></i> Previous Lesson</a>
+<a class="btn btn-info dropdown-color" href="file:///C:\Users\akim4\Google Drive\CODE\FCCNotes\FCCNotes\JQUERY.html">Next Lesson <i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
+</span>
+</div>
+</div>
+</body>
+
+</html>

@@ -160,155 +160,369 @@ Assigns <div class=smalltextarea>5</div> to <div class=smalltextarea>myVar</div>
   <hr>
   <!--------------------------------------------------------------------------------------------->
   <li>
-  <h2></h2>
-  <p2></p2>
+  <h2>Initializing Variables with the Assignment Operator</h2>
+  <p2>It is common to <div class=smalltextarea>initialize</div> a variable to an initial value in the same line as it is declared.
+
+<div class=smalltextarea>var myVar = 0;</div>
+<br>
+<br>
+Creates a new variable called <div class=smalltextarea>myVar</div> and assigns it an initial value of <div class=smalltextarea>0</div>.
+
   </li>
   <hr>
   <!--------------------------------------------------------------------------------------------->
   <li>
-  <h2></h2>
-  <p2></p2>
+  <h2>Understanding Uninitialized Variables</h2>
+  <p2>When JavaScript variables are declared, they have an initial value of <div class=smalltextarea>undefined</div>.
+<br>
+<br>
+    If you do a mathematical operation on an <div class=smalltextarea>undefined</div> variable your result will be <div class=smalltextarea>NaN</div> which means <div class=smalltextarea>"Not a Number"</div>.
+    <br>
+    <br>
+    If you concatenate a string with an <div class=smalltextarea>undefined</div> variable, you will get a literal <div class=smalltextarea>string</div> of <div class=smalltextarea>"undefined"</div>.
+</p2>
   </li>
   <hr>
   <!--------------------------------------------------------------------------------------------->
   <li>
-  <h2></h2>
-  <p2></p2>
+  <h2>Understanding Case Sensitivity in Variables</h2>
+  <p2>In JavaScript all variables and function names are case sensitive. This means that capitalization matters.
+<br>
+<br>
+<div class=smalltextarea>MYVAR</div> is not the same as <div class=smalltextarea>MyVar</div> nor <div class=smalltextarea>myvar</div>. It is possible to have multiple distinct variables with the same name but different casing.
+<br>
+<br>
+It is strongly recommended that for the sake of clarity, you do notuse this language feature.
+</p2>
   </li>
   <hr>
   <!--------------------------------------------------------------------------------------------->
   <li>
-  <h2></h2>
-  <p2></p2>
+  <h2>Add Two Numbers with JavaScript</h2>
+  <p2><div class=smalltextarea>Number</div> is a data type in JavaScript which represents numeric data.
+<br>
+<br>
+Now let's try to add two numbers using JavaScript.
+<br>
+<br>
+JavaScript uses the <div class=smalltextarea>+</div> symbol as addition operation when placed between two numbers.
+<br>
+<br>
+<em>Example</em> :
+<textarea>
+myVar = 5 + 10; // assigned 15
+</textarea>
+</p2>
   </li>
   <hr>
   <!--------------------------------------------------------------------------------------------->
   <li>
-  <h2></h2>
-  <p2></p2>
+  <h2>Subtract One Number from Another with JavaScript</h2>
+  <p2>We can also subtract one number from another.
+
+JavaScript uses the <div class=smalltextarea>-</div> symbol for subtraction.
+<br>
+<br>
+<em>Example</em> :
+<textarea>
+myVar = 12 - 6; // assigned 6
+</textarea></p2>
   </li>
   <hr>
   <!--------------------------------------------------------------------------------------------->
   <li>
-  <h2></h2>
-  <p2></p2>
-  </li>
-  <hr>
-  <!--------------------------------------------------------------------------------------------->
-  <!--------------------------------------------------------------------------------------------->
-  <li>
-  <h2></h2>
-  <p2></p2>
-  </li>
-  <hr>
-  <!--------------------------------------------------------------------------------------------->
-  <li>
-  <h2></h2>
-  <p2></p2>
-  </li>
-  <hr>
-  <!--------------------------------------------------------------------------------------------->
-  <li>
-  <h2></h2>
-  <p2></p2>
-  </li>
-  <hr>
-  <!--------------------------------------------------------------------------------------------->
-  <li>
-  <h2></h2>
-  <p2></p2>
-  </li>
-  <hr>
-  <!--------------------------------------------------------------------------------------------->
-  <li>
-  <h2></h2>
-  <p2></p2>
-  </li>
-  <hr>
-  <!--------------------------------------------------------------------------------------------->
-  <li>
-  <h2></h2>
-  <p2></p2>
-  </li>
-  <hr>
-  <!--------------------------------------------------------------------------------------------->
-  <li>
-  <h2></h2>
-  <p2></p2>
-  </li>
-  <hr>
-  <!--------------------------------------------------------------------------------------------->
-  <li>
-  <h2></h2>
-  <p2></p2>
-  </li>
-  <hr>
-  <!--------------------------------------------------------------------------------------------->
-  <li>
-  <h2></h2>
-  <p2></p2>
+  <h2>Multiply Two Numbers with JavaScript</h2>
+  <p2>
+We can also multiply one number by another.
+
+JavaScript uses the * symbol for multiplication of two numbers.
+<br>
+<br>
+<em>Example</em> :
+<textarea>
+myVar = 13 * 13; // assigned 169</textarea></p2>
   </li>
   <hr>
   <!--------------------------------------------------------------------------------------------->
   <!--------------------------------------------------------------------------------------------->
   <li>
-  <h2></h2>
-  <p2></p2>
+  <h2>Divide One Number by Another with JavaScript</h2>
+  <p2>We can also divide one number by another.
+
+JavaScript uses the <div class=smalltextarea>/</div> symbol for division.
+<br>
+<br>
+<em>Example</em> :
+<textarea>
+myVar = 16 / 2; // assigned 8</textarea></p2>
   </li>
   <hr>
   <!--------------------------------------------------------------------------------------------->
   <li>
-  <h2></h2>
-  <p2></p2>
+  <h2>Increment a Number with JavaScript</h2>
+  <p2>
+You can easily increment or add one to a variable with the <div class=smalltextarea>++</div> operator.
+<br>
+<br>
+<div class=smalltextarea>i++;</div>
+<br>
+<br>
+is the equivalent of
+<br>
+<br>
+<div class=smalltextarea>i = i + 1;</div>
+<br>
+<br>
+<em>Note</em> :
+The entire line becomes <div class=smalltextarea>i++;</div>, eliminating the need for the equal sign.</p2>
   </li>
   <hr>
   <!--------------------------------------------------------------------------------------------->
   <li>
-  <h2></h2>
-  <p2></p2>
+  <h2>Decrement a Number with JavaScript</h2>
+  <p2>
+You can easily decrement or decrease a variable by one with the <div class=smalltextarea>--</div>operator.
+<br>
+<br>
+<div class=smalltextarea>i--;</div>
+<br>
+<br>
+is the equivalent of
+<br>
+<br>
+<div class=smalltextarea>i = i - 1;</div>
+<br>
+<br>
+<em>Note</em> :
+The entire line becomes <div class=smalltextarea>i--;</div>, eliminating the need for the equal sign.</p2>
   </li>
   <hr>
   <!--------------------------------------------------------------------------------------------->
   <li>
-  <h2></h2>
-  <p2></p2>
+  <h2>Create Decimal Numbers with JavaScript</h2>
+  <p2>
+We can store decimal numbers in variables too. Decimal numbers are sometimes referred to as <div class=smalltextarea>floating point</div> numbers or <div class=smalltextarea>floats</div>.
+<br>
+<br>
+<em>Note</em> :
+Not all real numbers can accurately be represented in <div class=smalltextarea>floating point</div>. This can lead to rounding errors.
+</p2>
   </li>
   <hr>
   <!--------------------------------------------------------------------------------------------->
   <li>
-  <h2></h2>
-  <p2></p2>
+  <h2>Multiply Two Decimals with JavaScript</h2>
+  <p2>In JavaScript, you can also perform calculations with decimal numbers, just like whole numbers.
+</p2>
   </li>
   <hr>
   <!--------------------------------------------------------------------------------------------->
   <li>
-  <h2></h2>
-  <p2></p2>
+  <h2>Divide one Decimal by Another with JavaScript</h2>
+  <p2><em>Example</em> : <div class=smalltextarea>var quotient = 4.4 / 2.0;</div></p2>
   </li>
   <hr>
   <!--------------------------------------------------------------------------------------------->
   <li>
-  <h2></h2>
-  <p2></p2>
+  <h2>Finding a Remainder in JavaScript</h2>
+  <p2>
+The <div class=smalltextarea>remainder</div> operator <div class=smalltextarea>%</div> gives the remainder of the division of two numbers.
+<br>
+<br>
+<em>Example</em> :
+<textarea>
+5 % 2 = 1 because
+Math.floor(5 / 2) = 2 (Quotient)
+2 * 2 = 4
+5 - 4 = 1 (Remainder)
+</textarea>
+<br>
+<br>
+<em>Usage</em> :
+In mathematics, a number can be checked even or odd by checking the remainder of the division of the number by <div class=smalltextarea>2</div>.
+<textarea>
+17 % 2 = 1 (17 is Odd)
+48 % 2 = 0 (48 is Even)
+</textarea>
+<em>Note</em> :
+The <div class=smalltextarea>remainder</div> operator is sometimes incorrectly referred to as the "modulus" operator. It is very similar to modulus, but does not work properly with negative numbers.</p2>
   </li>
   <hr>
   <!--------------------------------------------------------------------------------------------->
   <li>
-  <h2></h2>
-  <p2></p2>
+  <h2>Compound Assignment With Augmented Addition</h2>
+  <p2>In programming, it is common to use assignments to modify the contents of a variable.
+<br>
+<br>
+    Remember that everything to the right of the equals sign is evaluated first, so we can say:
+<textarea>
+myVar = myVar + 5;
+</textarea>
+to add 5 to myVar. Since this is such a common pattern, there are operators which do both a mathematical operation and assignment in one step.
+<br>
+<br>
+One such operator is the <div class=smalltextarea>+=</div> operator.
+
+<div class=smalltextarea>myVar += 5</div>; will add <div class=smalltextarea>5</div> to <div class=smalltextarea>myVar</div>.</p2>
   </li>
   <hr>
   <!--------------------------------------------------------------------------------------------->
   <li>
-  <h2></h2>
-  <p2></p2>
+  <h2>Compound Assignment With Augmented Multiplication</h2>
+  <p2>The <div class=smalltextarea>*=</div> operator multiplies a variable by a number.
+<textarea>
+myVar = myVar * 5;
+</textarea>
+will multiply <div class=smalltextarea>myVar</div> by <div class=smalltextarea></div>5. This can be rewritten as:
+<textarea>
+myVar *= 5;
+</textarea></p2>
+  </li>
+  <hr>
+  <!--------------------------------------------------------------------------------------------->
+  <li>
+  <h2>Compound Assignment With Augmented Division</h2>
+  <p2>The <div class=smalltextarea>/=</div> operator divides a variable by another number.
+<textarea>
+myVar = myVar / 5;
+</textarea>
+Will divide <div class=smalltextarea>myVar</div> by <div class=smalltextarea>5</div>. This can be rewritten as:
+
+<div class=smalltextarea>myVar /= 5;</div>.
+</p2>
+  </li>
+  <hr>
+  <!--------------------------------------------------------------------------------------------->
+  <li>
+  <h2>Convert Celsius to Fahrenheit</h2>
+  <p2>To test your learning, you will create a solution "from scratch". Place your code between the indicated lines and it will be tested against multiple test cases.
+<br>
+<br>
+The algorithm to convert from <div class=smalltextarea>Celsius</div> to Fahrenheit is the temperature in Celsius times <div class=smalltextarea>9/5</div>, plus <div class=smalltextarea>32</div>.
+<br>
+<br>
+You are given a variable celsius representing a temperature in Celsius. Use the variable <div class=smalltextarea>fahrenheit</div> already defined and apply the algorithm to assign it the corresponding temperature in Fahrenheit.
+<br>
+<br>
+<em>Note</em> :
+Don't worry too much about the <div class=smalltextarea>function</div> and <div class=smalltextarea>return</div> statements as they will be covered in future challenges. For now, only use operators that you have already learned.</p2>
+  </li>
+  <hr>
+  <!--------------------------------------------------------------------------------------------->
+  <li>
+  <h2>Declare String Variables</h2>
+  <p2>Previously we have used the code
+<textarea>
+var myName = "your name";
+</textarea>
+<div class=smalltextarea>"your name"</div> is called a <div class=smalltextarea>string</div> <div class=smalltextarea>literal</div>. It is a string because it is a series of zero or more characters enclosed in single or double quotes.
+</p2>
+  </li>
+  <hr>
+  <!--------------------------------------------------------------------------------------------->
+  <li>
+  <h2>Escaping Literal Quotes in Strings</h2>
+  <p2>When you are defining a string you must start and end with a single or double quote. What happens when you need a literal quote: <div class=smalltextarea>"</div> or <div class=smalltextarea>'</div> inside of your string?
+<br>
+<br>
+In JavaScript, you can <div class=smalltextarea>escape</div> a quote from considering it as an end of string quote by placing a <div class=smalltextarea>backslash</div> (<div class=smalltextarea>\</div>) in front of the quote.
+<textarea>
+var sampleStr = "Alan said, \"Peter is learning JavaScript\".";
+</textarea>
+This signals to JavaScript that the following quote is not the end of the string, but should instead appear inside the string. So if you were to print this to the console, you would get:
+<textarea>
+Alan said, "Peter is learning JavaScript".
+</textarea>
+</p2>
+  </li>
+  <hr>
+  <!--------------------------------------------------------------------------------------------->
+  <li>
+  <h2>Quoting Strings with Single Quotes</h2>
+  <p2>String values in JavaScript may be written with single or double quotes, so long as you start and end with the same type of quote. Unlike some languages, single and double quotes are functionally identical in JavaScript.
+<textarea>
+"This string has \"double quotes\" in it"
+</textarea>
+The value in using one or the other has to do with the need to <div class=smalltextarea>escape</div> quotes of the same type. Unless they are escaped, you cannot have more than one pair of whichever quote type begins a string.
+<textarea>
+If you have a string with many double quotes, this can be difficult to read and write. Instead, use single quotes:
+</textarea>
+'This string has "double quotes" in it. And "probably" lots of them.'</p2>
+  </li>
+  <hr>
+  <!--------------------------------------------------------------------------------------------->
+  <li>
+  <h2>Escape Sequences in Strings</h2>
+  <p2>
+Quotes are not the only characters that can be <div class=smalltextarea>escaped</div> inside a string. Here is a table of common escape sequences:
+<br>
+<br>
+Code	Output
+<br>
+<div class=smalltextarea>\'</div>	single quote
+<br>
+<div class=smalltextarea>\"</div>	double quote
+<br>
+<div class=smalltextarea>\\</div>	backslash
+<br>
+<div class=smalltextarea>\r</div>	carriage return
+<br>
+<div class=smalltextarea>\t</div>	tab
+<br>
+<div class=smalltextarea>\b</div>	backspace
+<br>
+<div class=smalltextarea>\f</div>	form feed
+<br>
+<br>
+Note that the backslash itself must be escaped in order to display as a backslash.</p2>
+  </li>
+  <hr>
+  <!--------------------------------------------------------------------------------------------->
+  <li>
+  <h2>Concatenating Strings with Plus Operator</h2>
+  <p2>In JavaScript, when the <div class=smalltextarea>+</div> operator is used with a <div class=smalltextarea>String</div> value, it is called the <div class=smalltextarea>concatenation</div> operator. You can build a new string out of other strings by <div class=smalltextarea>concatenating</div> them together.
+
+<em>Example</em> :
+<textarea>
+'My name is Alan,' + ' I concatenate.'
+</textarea>
+<em>Note</em> :
+Watch out for spaces. Concatenation does not add spaces between concatenated strings, so you'll need to add them yourself.</p2>
+  </li>
+  <hr>
+  <!--------------------------------------------------------------------------------------------->
+  <li>
+  <h2>Concatenating Strings with the Plus Equals Operator</h2>
+  <p2>
+We can also use the <div class=smalltextarea>+=</div> operator to <div class=smalltextarea>concatenate</div> a string onto the end of an existing string variable. This can be very helpful to break a long string over several lines.
+<br>
+<br>
+<em>Note</em> :
+Watch out for spaces. Concatenation does not add spaces between concatenated strings, so you'll need to add them yourself.
+
+<br>
+<br>
+<em>Example</em> :
+<textarea>
+var ourStr = "I come first. ";
+ourStr += "I come second.";
+</textarea>
+</p2>
   </li>
   <hr>
   <!--------------------------------------------------------------------------------------------->
   <!--------------------------------------------------------------------------------------------->
   <li>
-  <h2></h2>
-  <p2></p2>
+  <h2>Constructing Strings with Variables</h2>
+  <p2>Sometimes you will need to build a string, Mad Libs style. By using the concatenation operator (<div class=smalltextarea>+</div>), you can insert one or more variables into a string you're building.
+<br>
+<br>
+<em>Example</em> :
+<textarea>
+   var ourName = "Free Code Camp";
+   var ourStr = "Hello, our name is " + ourName + ", how are you?";
+</textarea>
+  </p2>
   </li>
   <hr>
   <!--------------------------------------------------------------------------------------------->

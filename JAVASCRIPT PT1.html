@@ -90,10 +90,15 @@
   <!--------------------------------------------------------------------------------------------->
   <li>
   <h2>Comment your JavaScript Code</h2>
-  <p2>Comments are lines of code that JavaScript will intentionally ignore. Comments are a great way to leave notes to yourself and to other people who will later need to figure out what that code does.
-
+  <p2>Comments are lines of code that JavaScript will intentionally ignore.
+<br>
+<br>
+    Comments are a great way to leave notes to yourself and to other people who will later need to figure out what that code does.
+<br>
+<br>
 There are two ways to write comments in JavaScript:
-
+<br>
+<br>
 Using <div class=smalltextarea>//</div> will tell JavaScript to ignore the remainder of the text on the current line:
 <textarea>
 // This is an in-line comment.
@@ -106,7 +111,10 @@ You can make a multi-line comment beginning with <div class=smalltextarea>/*</di
 
 <em>Best Practice</em>
 <br>
-As you write code, you should regularly add comments to clarify the function of parts of your code. Good commenting can help communicate the intent of your code—both for others and for your future self.
+As you write code, you should regularly add comments to clarify the function of parts of your code.
+<br>
+<br>
+Good commenting can help communicate the intent of your code—both for others and for your future self.
 </p2>
   </li>
   <hr>
@@ -114,16 +122,31 @@ As you write code, you should regularly add comments to clarify the function of 
   <li>
   <h2>Declare JavaScript Variables </h2>
   <p2>
-In computer science, <div class=smalltextarea>data</div> is anything that is meaningful to the computer. JavaScript provides seven different <div class=smalltextarea>data types</div> which are <div class=smalltextarea>undefined</div>, <div class=smalltextarea>null</div>, <div class=smalltextarea>boolean</div>, <div class=smalltextarea>string</div>, <div class=smalltextarea>symbol</div>, <div class=smalltextarea>number</div>, and <div class=smalltextarea>object</div>.
+In computer science, <div class=smalltextarea>data</div> is anything that is meaningful to the computer.
 <br>
 <br>
-For example, computers distinguish between numbers, such as the number <div class=smalltextarea>12</div>, and <div class=smalltextarea>strings</div>, such as <div class=smalltextarea>"12"</div>, <div class=smalltextarea>"dog"</div>, or <div class=smalltextarea>"123 cats"</div>, which are collections of characters. Computers can perform mathematical operations on a number, but not on a string.
+JavaScript provides seven different <div class=smalltextarea>data types</div> which are <div class=smalltextarea>undefined</div>, <div class=smalltextarea>null</div>, <div class=smalltextarea>boolean</div>, <div class=smalltextarea>string</div>, <div class=smalltextarea>symbol</div>, <div class=smalltextarea>number</div>, and <div class=smalltextarea>object</div>.
 <br>
 <br>
-<div class=smalltextarea>Variables</div> allow computers to store and manipulate data in a dynamic fashion. They do this by using a "label" to point to the data rather than using the data itself. Any of the seven data types may be stored in a variable.
+For example, computers distinguish between numbers, such as the number <div class=smalltextarea>12</div>, and <div class=smalltextarea>strings</div>, such as <div class=smalltextarea>"12"</div>, <div class=smalltextarea>"dog"</div>, or <div class=smalltextarea>"123 cats"</div>, which are collections of characters.
 <br>
 <br>
-Variables are similar to the x and y variables you use in mathematics, which means they're a simple name to represent the data we want to refer to. Computer <div class=smalltextarea>variables</div> differ from mathematical variables in that they can store different values at different times.
+Computers can perform mathematical operations on a number, but not on a string.
+<br>
+<br>
+<div class=smalltextarea>Variables</div> allow computers to store and manipulate data in a dynamic fashion.
+<br>
+<br>
+They do this by using a "label" to point to the data rather than using the data itself.
+<br>
+<br>
+Any of the seven data types may be stored in a variable.
+<br>
+<br>
+Variables are similar to the x and y variables you use in mathematics, which means they're a simple name to represent the data we want to refer to.
+<br>
+<br>
+Computer <div class=smalltextarea>variables</div> differ from mathematical variables in that they can store different values at different times.
 <br>
 <br>
 We tell JavaScript to create or declare a variable by putting the keyword var in front of it, like so:
@@ -439,11 +462,17 @@ Alan said, "Peter is learning JavaScript".
   <!--------------------------------------------------------------------------------------------->
   <li>
   <h2>Quoting Strings with Single Quotes</h2>
-  <p2>String values in JavaScript may be written with single or double quotes, so long as you start and end with the same type of quote. Unlike some languages, single and double quotes are functionally identical in JavaScript.
+  <p2>String values in JavaScript may be written with single or double quotes, so long as you start and end with the same type of quote.
+<br>
+<br>
+    Unlike some languages, single and double quotes are functionally identical in JavaScript.
 <textarea>
 "This string has \"double quotes\" in it"
 </textarea>
-The value in using one or the other has to do with the need to <div class=smalltextarea>escape</div> quotes of the same type. Unless they are escaped, you cannot have more than one pair of whichever quote type begins a string.
+The value in using one or the other has to do with the need to <div class=smalltextarea>escape</div> quotes of the same type.
+<br>
+<br>
+Unless they are escaped, you cannot have more than one pair of whichever quote type begins a string.
 <textarea>
 If you have a string with many double quotes, this can be difficult to read and write. Instead, use single quotes:
 </textarea>
@@ -480,7 +509,10 @@ Note that the backslash itself must be escaped in order to display as a backslas
   <!--------------------------------------------------------------------------------------------->
   <li>
   <h2>Concatenating Strings with Plus Operator</h2>
-  <p2>In JavaScript, when the <div class=smalltextarea>+</div> operator is used with a <div class=smalltextarea>String</div> value, it is called the <div class=smalltextarea>concatenation</div> operator. You can build a new string out of other strings by <div class=smalltextarea>concatenating</div> them together.
+  <p2>In JavaScript, when the <div class=smalltextarea>+</div> operator is used with a <div class=smalltextarea>String</div> value, it is called the <div class=smalltextarea>concatenation</div> operator.
+    <br>
+    <br>
+    You can build a new string out of other strings by <div class=smalltextarea>concatenating</div> them together.
 
 <em>Example</em> :
 <textarea>
@@ -527,124 +559,449 @@ ourStr += "I come second.";
   <hr>
   <!--------------------------------------------------------------------------------------------->
   <li>
-  <h2></h2>
-  <p2></p2>
+  <h2>Appending Variables to Strings</h2>
+  <p2>Just as we can build a string over multiple lines out of string literals, we can also append variables to a string using the plus equals (<div class=smalltextarea>+=</div>) operator.
+<br>
+<br>
+<em>Example</em> :
+<textarea>
+   var anAdjective = "awesome!";
+   var ourStr = "Free Code Camp is ";
+   ourStr += anAdjective;
+ </textarea>
+</p2>
   </li>
   <hr>
   <!--------------------------------------------------------------------------------------------->
   <li>
-  <h2></h2>
-  <p2></p2>
+  <h2>Find the Length of a String</h2>
+  <p2>You can find the length of a <div class=smalltextarea>String</div> value by writing <div class=smalltextarea>.length</div> after the string variable or string literal.
+<textarea>
+"Alan Peter".length; // 10
+</textarea>
+For example, if we created a variable <div class=smalltextarea>var firstName = "Charles"</div>, we could find out how long the string <div class=smalltextarea>"Charles"</div> is by using the <div class=smalltextarea>firstName.length</div> property.
+<br>
+<br>
+<em>Example</em> :
+<textarea>
+// Example
+var firstNameLength = 0;
+var firstName = "Ada";
+
+firstNameLength = firstName.length;
+
+// Setup
+var lastNameLength = 0;
+var lastName = "Lovelace";
+</textarea>
+</p2>
   </li>
   <hr>
   <!--------------------------------------------------------------------------------------------->
   <li>
-  <h2></h2>
-  <p2></p2>
+  <h2>Use Bracket Notation to Find the First Character in a String</h2>
+  <p2>
+<div class=smalltextarea>Bracket notation</div> is a way to get a character at a specific indexwithin a string.
+<br>
+<br>
+Most modern programming languages, like JavaScript, don't start counting at 1 like humans do. They start at 0. This is referred to as <div class=smalltextarea>Zero-based</div> indexing.
+<br>
+<br>
+For example, the character at index 0 in the word "Charles" is "C". So if <div class=smalltextarea>var firstName = "Charles"</div>, you can get the value of the first letter of the string by using <div class=smalltextarea>firstName[0]</div>.
+<br>
+<br>
+Hint
+Try looking at the firstLetterOfFirstName variable declaration if you get stuck.
+<br>
+<br>
+<em>Example</em> :
+<textarea>
+  var firstLetterOfFirstName = "";
+  var firstName = "Ada";
+
+  firstLetterOfFirstName = firstName[0];
+
+  // Setup
+  var firstLetterOfLastName = "";
+  var lastName = "Lovelace";
+</textarea>
+</p2>
   </li>
   <hr>
   <!--------------------------------------------------------------------------------------------->
   <li>
-  <h2></h2>
-  <p2></p2>
+  <h2>Understand String Immutability</h2>
+  <p2>
+In JavaScript, <div class=smalltextarea>String</div> values are <div class=smalltextarea>immutable</div>, which means that they cannot be altered once created.
+
+For example, the following code:
+<textarea>
+var myStr = "Bob";
+myStr[0] = "J";
+</textarea>
+cannot change the value of <div class=smalltextarea>myStr</div> to "Job", because the contents of <div class=smalltextarea>myStr</div> cannot be altered.
+<br>
+<br>
+Note that this does not mean that <div class=smalltextarea>myStr</div>cannot be changed, just that the individual characters of a <div class=smalltextarea>string literal</div> cannot be changed.
+<br>
+<br>
+The only way to change <div class=smalltextarea>myStr</div> would be to assign it with a new string, like this:
+<textarea>
+var myStr = "Bob";
+myStr = "Job";
+</textarea>
+</p2>
   </li>
   <hr>
   <!--------------------------------------------------------------------------------------------->
   <li>
-  <h2></h2>
-  <p2></p2>
+  <h2>Use Bracket Notation to Find the Nth Character in a String</h2>
+  <p2>
+You can also use <div class=smalltextarea>bracket notation</div> to get the character at other positions within a string.
+<br>
+<br>
+Remember that computers start counting at <div class=smalltextarea>0</div>, so the first character is actually the zeroth character.
+<br>
+<br>
+<em>Example</em> :
+<textarea>
+var firstName = "Ada";
+var secondLetterOfFirstName = firstName[1];
+
+// Setup
+var lastName = "Lovelace";
+</textarea>
+</p2>
   </li>
   <hr>
   <!--------------------------------------------------------------------------------------------->
   <li>
-  <h2></h2>
-  <p2></p2>
+  <h2>Use Bracket Notation to Find the Last Character in a String</h2>
+  <p2>
+In order to get the last letter of a string, you can subtract one from the string's length.
+<br>
+<br>
+For example, if <div class=smalltextarea>var firstName = "Charles"</div>, you can get the value of the last letter of the string by using <div class=smalltextarea>firstName[firstName.length - 1].</div>
+<br>
+<br>
+<em>Example</em> :
+<textarea>
+var firstName = "Ada";
+var lastLetterOfFirstName = firstName[firstName.length - 1];
+
+// Setup
+var lastName = "Lovelace";
+</textarea>
+</p2>
   </li>
   <hr>
   <!--------------------------------------------------------------------------------------------->
   <li>
-  <h2></h2>
-  <p2></p2>
+  <h2>Use Bracket Notation to Find the Nth to Last Character in a String</h2>
+  <p2>
+You can use the same principle we just used to retrieve the last character in a string to retrieve the Nth-to-last character.
+<br>
+<br>
+For example, you can get the value of the third-to-last letter of the <div class=smalltextarea>var firstName = "Charles"</div> string by using <div class=smalltextarea>firstName[firstName.length - 3]</div>
+<br>
+<br>
+<em>Example</em> :
+<textarea>
+  var firstName = "Ada";
+  var thirdToLastLetterOfFirstName = firstName[firstName.length - 3];
+
+  // Setup
+  var lastName = "Lovelace";
+</textarea>
+</p2>
   </li>
   <hr>
   <!--------------------------------------------------------------------------------------------->
   <li>
-  <h2></h2>
-  <p2></p2>
-  </li>
-  <hr>
-  <!--------------------------------------------------------------------------------------------->
-  <!--------------------------------------------------------------------------------------------->
-  <li>
-  <h2></h2>
-  <p2></p2>
-  </li>
-  <hr>
-  <!--------------------------------------------------------------------------------------------->
-  <li>
-  <h2></h2>
-  <p2></p2>
-  </li>
-  <hr>
-  <!--------------------------------------------------------------------------------------------->
-  <li>
-  <h2></h2>
-  <p2></p2>
-  </li>
-  <hr>
-  <!--------------------------------------------------------------------------------------------->
-  <li>
-  <h2></h2>
-  <p2></p2>
-  </li>
-  <hr>
-  <!--------------------------------------------------------------------------------------------->
-  <li>
-  <h2></h2>
-  <p2></p2>
-  </li>
-  <hr>
-  <!--------------------------------------------------------------------------------------------->
-  <li>
-  <h2></h2>
-  <p2></p2>
-  </li>
-  <hr>
-  <!--------------------------------------------------------------------------------------------->
-  <li>
-  <h2></h2>
-  <p2></p2>
-  </li>
-  <hr>
-  <!--------------------------------------------------------------------------------------------->
-  <li>
-  <h2></h2>
-  <p2></p2>
-  </li>
-  <hr>
-  <!--------------------------------------------------------------------------------------------->
-  <li>
-  <h2></h2>
-  <p2></p2>
+  <h2>Word Blanks</h2>
+  <p2>
+We will now use our knowledge of strings to build a <div class=smalltextarea>"Mad Libs"</div> style word game we're calling "Word Blanks".
+<br>
+<br>
+You will create an (optionally humorous) "Fill in the Blanks" style sentence.
+<br>
+<br>
+In a "Mad Libs" game, you are provided sentences with some missing words, like nouns, verbs, adjectives and adverbs.
+<br>
+<br>
+You then fill in the missing pieces with words of your choice in a way that the completed sentence makes sense.
+<br>
+<br>
+Consider this sentence - "It was really ____, and we ____ ourselves ____".
+<br>
+<br>
+This sentence has three missing pieces- an adjective, a verb and an adverb, and we can add words of our choice to complete it.
+<br>
+<br>
+We can then assign the completed sentence to a variable as follows:
+<textarea>
+var sentence = "It was really" + "hot" + ", and we" + "laughed" + "ourselves" + "silly.";
+</textarea>
+In this challenge, we provide you with a noun, a verb, an adjective and an adverb.
+<br>
+<br>
+You need to form a complete sentence using words of your choice, along with the words we provide.
+<br>
+<br>
+You will need to use the string concatenation operator <div class=smalltextarea>+</div> to build a new string, using the provided variables: <div class=smalltextarea>myNoun</div>, <div class=smalltextarea>myAdjective</div>, <div class=smalltextarea>myVerb</div>, and <div class=smalltextarea>myAdverb</div>.
+<br>
+<br>
+You will then assign the formed string to the result variable.
+<br>
+<br>
+You will also need to account for spaces in your string, so that the final sentence has spaces between all the words. The result should be a complete sentence.</p2>
   </li>
   <hr>
   <!--------------------------------------------------------------------------------------------->
   <!--------------------------------------------------------------------------------------------->
   <li>
-  <h2></h2>
-  <p2></p2>
+  <h2>Store Multiple Values in one Variable using JavaScript Arrays</h2>
+  <p2>With JavaScript <div class=smalltextarea>array</div> variables, we can store several pieces of data in one place.
+
+You start an array declaration with an opening square bracket, end it with a closing square bracket, and put a comma between each entry, like this:
+<textarea>
+var sandwich = ["peanut butter", "jelly", "bread"].
+</textarea>
+  <br>
+  <br>
+  <em>Example</em> :
+  <textarea>
+var ourArray = ["John", 23];
+</textarea>
+</p2>
   </li>
   <hr>
   <!--------------------------------------------------------------------------------------------->
   <li>
-  <h2></h2>
-  <p2></p2>
+  <h2>Nest one Array within Another Array</h2>
+  <p2>You can also nest arrays within other arrays, like this: <div class=smalltextarea>[["Bulls", 23], ["White Sox", 45]]</div>.
+<br>
+<br>
+    This is also called a <div class=smalltextarea>Multi-dimensional Array</div>.
+    <br>
+    <br>
+    <em>Example</em> :
+    <textarea>
+var ourArray = [["the universe", 42], ["everything", 101010]];
+</textarea>
+  </p2>
   </li>
   <hr>
   <!--------------------------------------------------------------------------------------------->
   <li>
-  <h2></h2>
-  <p2></p2>
+  <h2>Access Array Data with Indexes</h2>
+  <p2>
+    We can access the data inside arrays using <div class=smalltextarea>indexes</div>.
+
+    Array indexes are written in the same bracket notation that strings use, except that instead of specifying a character, they are specifying an entry in the array. Like strings, arrays use <div class=smalltextarea>zero-based</div> indexing, so the first element in an array is element <div class=smalltextarea>0</div>.
+    <br>
+    <br>
+    <em>Example</em> :
+    <textarea>
+    var array = [1,2,3];
+    array[0]; // equals 1
+    var data = array[1];  // equals 2
+  </textarea>
+  </p2>
+  </li>
+  <hr>
+  <!--------------------------------------------------------------------------------------------->
+  <li>
+  <h2>Modify Array Data With Indexes</h2>
+  <p2>
+Unlike strings, the entries of arrays are <div class=smalltextarea>mutable</div> and can be changed freely.
+<br>
+<br>
+<em>Example</em> :
+<textarea>
+var ourArray = [3,2,1];
+ourArray[0] = 1; // equals [1,2,1]
+</textarea>
+</p2>
+  </li>
+  <hr>
+  <!--------------------------------------------------------------------------------------------->
+  <li>
+  <h2>Access MultiDimensional Arrays With Indexes</h2>
+  <p2>
+    One way to think of a <div class=smalltextarea>multi-dimensional</div> array, is as an array of arrays.
+<br>
+<br>
+    When you use brackets to access your array, the first set of brackets refers to the entries in the outer-most (the first level) array, and each additional pair of brackets refers to the next level of entries inside.
+    <br>
+    <br>
+    <em>Example</em> :
+    <textarea>
+var arr = [
+    [1,2,3],
+    [4,5,6],
+    [7,8,9],
+    [[10,11,12], 13, 14]
+];
+arr[3]; // equals [[10,11,12], 13, 14]
+arr[3][0]; // equals [10,11,12]
+arr[3][0][1]; // equals 11
+</textarea>
+</p2>
+  </li>
+  <hr>
+  <!--------------------------------------------------------------------------------------------->
+  <li>
+  <h2>Manipulate Arrays With push</h2>
+  <p2>
+An easy way to append data to the end of an array is via the <div class=smalltextarea>push()</div> function.
+
+<div class=smalltextarea>.push()</div> takes one or more <div class=smalltextarea>parameters</div> and "pushes" them onto the end of the array.
+<br>
+<br>
+<em>Example</em> :
+<textarea>
+var arr = [1,2,3];
+arr.push(4);
+// arr is now [1,2,3,4]
+</textarea>
+</p2>
+  </li>
+  <hr>
+  <!--------------------------------------------------------------------------------------------->
+  <li>
+  <h2>Manipulate Arrays With pop</h2>
+  <p2>
+    Another way to change the data in an array is with the <div class=smalltextarea>.pop()</div> function.
+<br>
+<br>
+<div class=smalltextarea>.pop()</div> is used to "pop" a value off of the end of an array. We can store this "popped off" value by assigning it to a variable.
+<br>
+<br>
+Any type of entry can be "popped" off of an array - numbers, strings, even nested arrays.
+<br>
+<br>
+For example, for the code
+<div class=smalltextarea>var oneDown = [1, 4, 6].pop();</div>
+the variable <div class=smalltextarea>oneDown</div> now holds the value <div class=smalltextarea>6</div> and the array becomes <div class=smalltextarea>[1, 4]</div>.
+</p2>
+  </li>
+  <hr>
+  <!--------------------------------------------------------------------------------------------->
+  <li>
+  <h2>Manipulate Arrays With shift</h2>
+  <p2>
+    <div class=smalltextarea>pop()</div> always removes the last element of an array. What if you want to remove the first?
+<br>
+<br>
+That's where <div class=smalltextarea>.shift()</div> comes in. It works just like <div class=smalltextarea>.pop()</div>, except it removes the first element instead of the last.
+</p2>
+  </li>
+  <hr>
+  <!--------------------------------------------------------------------------------------------->
+  <li>
+  <h2>Manipulate Arrays With unshift</h2>
+  <p2>
+    Not only can you <div class=smalltextarea>shift</div> elements off of the beginning of an array, you can also <div class=smalltextarea>unshift</div> elements to the beginning of an array i.e. add elements in front of the array.
+<br>
+<br>
+  <div class=smalltextarea>.unshift()</div> works exactly like <div class=smalltextarea>.push()</div>, but instead of adding the element at the end of the array, <div class=smalltextarea>unshift()</div> adds the element at the beginning of the array.
+</p2>
+  </li>
+  <hr>
+  <!--------------------------------------------------------------------------------------------->
+  <!--------------------------------------------------------------------------------------------->
+  <li>
+  <h2>Write Reusable JavaScript with Functions</h2>
+  <p2>
+In JavaScript, we can divide up our code into reusable parts called <div class=smalltextarea>functions</div>.
+
+Here's an example of a function:
+<textarea>
+function functionName() {
+  console.log("Hello World");
+}
+</textarea>
+You can call or <div class=smalltextarea>invoke</div> this function by using its name followed by parentheses, like this:
+<textarea>
+functionName();
+</textarea>
+Each time the function is called it will print out the message <div class=smalltextarea>"Hello World"</div> on the dev console.
+<br>
+<br>
+All of the code between the curly braces will be executed every time the function is called.
+</p2>
+  </li>
+  <hr>
+  <!--------------------------------------------------------------------------------------------->
+  <li>
+  <h2>Passing Values to Functions with Arguments</h2>
+  <p2>
+    <div class=smalltextarea>Parameters</div> are variables that act as placeholders for the values that are to be input to a function when it is called.
+<br>
+<br>
+    When a function is defined, it is typically defined along with one or more parameters.
+<br>
+<br>
+    The actual values that are input (or <div class=smalltextarea>"passed"</div>) into a function when it is called are known as <div class=smalltextarea>arguments</div>.
+<br>
+<br>
+    Here is a function with two parameters, <div class=smalltextarea>param1</div> and <div class=smalltextarea>param2</div>:
+    <textarea>
+    function testFun(param1, param2) {
+      console.log(param1, param2);
+    }
+  </textarea>
+  Then we can call <div class=smalltextarea>testFun</div>:
+<textarea>
+    testFun("Hello", "World");
+</textarea>
+    We have passed two arguments, <div class=smalltextarea>"Hello"</div> and <div class=smalltextarea>"World"</div>. Inside the function, <div class=smalltextarea>param1</div> will equal "Hello" and <div class=smalltextarea>param2</div> will equal "World".
+<br>
+<br>
+    Note that you could call <div class=smalltextarea>testFun</div> again with different arguments and the parameters would take on the value of the new arguments.
+  </p2>
+  </li>
+  <hr>
+  <!--------------------------------------------------------------------------------------------->
+  <li>
+  <h2>Global Scope and Functions</h2>
+  <p2>
+In JavaScript, <div class=smalltextarea>scope</div> refers to the visibility of variables. Variables which are defined outside of a function block have <div class=smalltextarea>Global scope</div>.
+<br>
+<br>
+This means, they can be seen everywhere in your JavaScript code.
+<br>
+<br>
+Variables which are used without the <div class=smalltextarea>var</div> keyword are automatically created in the <div class=smalltextarea>global</div> scope.
+<br>
+<br>
+This can create unintended consequences elsewhere in your code or when running a function again.
+<br>
+<br>
+You should always declare your variables with <div class=smalltextarea>var</div>.
+<br>
+<br>
+stock test
+<textarea>
+  function fun1() {
+    // Assign 5 to oopsGlobal Here
+
+  }
+
+  // Only change code above this line
+  function fun2() {
+    var output = "";
+    if (typeof myGlobal != "undefined") {
+      output += "myGlobal: " + myGlobal;
+    }
+    if (typeof oopsGlobal != "undefined") {
+      output += " oopsGlobal: " + oopsGlobal;
+    }
+    console.log(output);
+  }
+</textarea>
+</p2>
   </li>
   <hr>
   <!--------------------------------------------------------------------------------------------->
